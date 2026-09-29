@@ -1,0 +1,223 @@
+{
+  "doc_escaneado.png": {
+    "texto_ocr": "INFORME TRIMESTRAL DE VENTAS\nEmpresa: Distribuciones Norte S.L.\nFecha: 30 de junio de 2026\n\n1. Resumen\nLas ventas del segundo trimestre alcanzaron 1.245.000 euros,\nun 12% más que en el mismo periodo del año anterior.\n\n2. Detalle por región\nMadrid: 540.000 euros\nBarcelona: 410.000 euros\nValencia: 295.000 euros\n\n3. Conclusión\nSe recomienda ampliar la plantilla comercial en Valencia.",
+    "escena": "documento",
+    "elementos_clave": [
+      "documento",
+      "texto",
+      "informe de ventas",
+      "papel"
+    ],
+    "objetos": {
+      "documento_obj": 1
+    }
+  },
+  "foto_urbana.jpg": {
+    "texto_ocr": "",
+    "escena": "calle urbana",
+    "elementos_clave": [
+      "edificios",
+      "personas",
+      "coches",
+      "calle",
+      "semáforo",
+      "acera"
+    ],
+    "objetos": {
+      "coche": 3,
+      "persona": 4,
+      "edificio": 6,
+      "semáforo": 1
+    }
+  },
+  "producto.jpg": {
+    "texto_ocr": "CAFÉ",
+    "escena": "producto",
+    "elementos_clave": [
+      "taza",
+      "roja",
+      "café",
+      "fondo blanco"
+    ],
+    "objetos": {
+      "taza": 1
+    }
+  },
+  "paisaje.jpg": {
+    "texto_ocr": "",
+    "escena": "paisaje de montaña",
+    "elementos_clave": [
+      "montañas",
+      "nieve",
+      "árboles",
+      "lago",
+      "sol",
+      "cielo"
+    ],
+    "objetos": {
+      "montaña": 3,
+      "sol": 1,
+      "lago": 1,
+      "árbol": 18
+    }
+  },
+  "screenshot.png": {
+    "texto_ocr": "https://tienda-ejemplo.com/ofertas\nTiendaEjemplo\nInicio\nOfertas\nMi cuenta\nOferta de otoño: 30% de descuento\nVálido hasta el 15 de octubre. Envío gratis en pedidos superiores a 50 €.\nComprar ahora\nNuevo mensaje\nTu pedido #48213 ha sido enviado\nhace 2 minutos",
+    "escena": "captura de pantalla",
+    "elementos_clave": [
+      "navegador",
+      "página web",
+      "oferta",
+      "botón",
+      "notificación"
+    ],
+    "objetos": {
+      "botón": 1,
+      "notificación": 1
+    }
+  },
+  "_sinonimos": {
+    "documento": [
+      "documento",
+      "documento escaneado",
+      "texto",
+      "informe",
+      "papel",
+      "oficina"
+    ],
+    "calle urbana": [
+      "calle",
+      "ciudad",
+      "urbana",
+      "urbano",
+      "street",
+      "city"
+    ],
+    "producto": [
+      "producto",
+      "bodegón",
+      "objeto",
+      "taza",
+      "fotografía de producto",
+      "estudio"
+    ],
+    "paisaje de montaña": [
+      "paisaje",
+      "montaña",
+      "montañas",
+      "naturaleza",
+      "lago",
+      "mountain"
+    ],
+    "captura de pantalla": [
+      "captura",
+      "pantalla",
+      "web",
+      "sitio web",
+      "página web",
+      "interfaz",
+      "screenshot"
+    ],
+    "coche": [
+      "coche",
+      "coches",
+      "automóvil",
+      "vehículo",
+      "auto",
+      "car"
+    ],
+    "persona": [
+      "persona",
+      "personas",
+      "peatón",
+      "peatones",
+      "gente",
+      "person"
+    ],
+    "edificio": [
+      "edificio",
+      "edificios",
+      "building"
+    ],
+    "semáforo": [
+      "semáforo",
+      "traffic light"
+    ],
+    "taza": [
+      "taza",
+      "tazón",
+      "mug",
+      "cup"
+    ],
+    "montaña": [
+      "montaña",
+      "montañas",
+      "mountain"
+    ],
+    "árbol": [
+      "árbol",
+      "árboles",
+      "pino",
+      "pinos",
+      "abeto",
+      "tree"
+    ],
+    "sol": [
+      "sol",
+      "sun"
+    ],
+    "lago": [
+      "lago",
+      "agua",
+      "lake",
+      "río"
+    ],
+    "botón": [
+      "botón",
+      "boton",
+      "button"
+    ],
+    "notificación": [
+      "notificación",
+      "notificacion",
+      "mensaje",
+      "popup",
+      "ventana emergente"
+    ],
+    "documento_obj": [
+      "documento",
+      "hoja",
+      "papel",
+      "página"
+    ],
+    "ilustración": [
+      "ilustración",
+      "ilustracion",
+      "dibujo",
+      "gráfico",
+      "grafico",
+      "diagrama",
+      "otro"
+    ],
+    "círculo": [
+      "círculo",
+      "circulo",
+      "sol",
+      "esfera"
+    ]
+  },
+  "ejemplo.jpg": {
+    "texto_ocr": "Playa al atardecer - imagen de prueba\nBarco, sol, mar y gaviotas (dibujo simple)",
+    "escena": "ilustración",
+    "elementos_clave": [
+      "círculo amarillo",
+      "marco",
+      "fondo azul",
+      "texto"
+    ],
+    "objetos": {
+      "círculo": 1
+    },
+    "nota": "Imagen heredada de 28-09-Reto: el texto menciona barco/mar/gaviotas pero NO aparecen dibujados."
+  }
+}

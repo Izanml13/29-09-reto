@@ -1,0 +1,20 @@
+{"id": 1, "origen": "28-09-Reto", "tipo": "resena", "subtipo": "positiva", "texto": "Me encanta el nuevo disco de Rosalía, es una obra maestra llena de energía."}
+{"id": 2, "origen": "28-09-Reto", "tipo": "resena", "subtipo": "negativa", "texto": "Odio el servicio de esta compañía, tardaron tres semanas y nadie responde."}
+{"id": 3, "origen": "28-09-Reto", "tipo": "resena", "subtipo": "mixta", "texto": "El restaurante está en la calle Mayor 12, la comida es correcta, sin más."}
+{"id": 4, "origen": "28-09-Reto", "tipo": "personal", "subtipo": "positiva", "texto": "Qué alegría ver a mi familia en Madrid después de dos años, fue emocionante."}
+{"id": 5, "origen": "28-09-Reto", "tipo": "resena", "subtipo": "negativa", "texto": "El vuelo de Iberia se retrasó 5 horas y perdimos la conexión, fatal."}
+{"id": 6, "origen": "28-09-Reto", "tipo": "resena", "subtipo": "positiva", "texto": "I absolutely love the new iPhone camera, the photos in Paris look stunning."}
+{"id": 7, "origen": "28-09-Reto", "tipo": "resena", "subtipo": "negativa", "texto": "This movie was terrible, boring plot and awful acting, waste of time."}
+{"id": 8, "origen": "28-09-Reto", "tipo": "email", "subtipo": "en", "texto": "The meeting is scheduled for Monday at 10am in London, please confirm."}
+{"id": 9, "origen": "28-09-Reto", "tipo": "personal", "subtipo": "positiva", "texto": "I'm so happy with my new job at Google, the team is amazing."}
+{"id": 10, "origen": "28-09-Reto", "tipo": "resena", "subtipo": "negativa", "texto": "The delivery from Amazon arrived broken and customer support was unhelpful."}
+{"id": 11, "origen": "ampliacion", "tipo": "noticia", "subtipo": "es", "texto": "El Gobierno de España aprobó ayer en Madrid un plan de 2.000 millones de euros para modernizar la red ferroviaria, según anunció el ministro Óscar Puente."}
+{"id": 12, "origen": "ampliacion", "tipo": "noticia", "subtipo": "en", "texto": "Apple CEO Tim Cook announced on Monday in Cupertino that the company will invest $5 billion in AI research over the next three years."}
+{"id": 13, "origen": "ampliacion", "tipo": "noticia", "subtipo": "pt", "texto": "O presidente Lula anunciou em Brasília um novo programa de habitação para 2 milhões de famílias, em parceria com a Caixa Econômica Federal."}
+{"id": 14, "origen": "ampliacion", "tipo": "resena", "subtipo": "positiva", "texto": "Compré los auriculares SoundMax Pro y son una maravilla: el sonido es nítido, la batería dura días y la cancelación de ruido funciona de lujo."}
+{"id": 15, "origen": "ampliacion", "tipo": "resena", "subtipo": "negativa", "texto": "La batidora Kitchenix llegó rota, el servicio técnico no contesta y me han cobrado dos veces. No la recomiendo a nadie."}
+{"id": 16, "origen": "ampliacion", "tipo": "resena", "subtipo": "mixta", "texto": "The Nimbus 3 laptop has a gorgeous screen and a great keyboard, but the battery barely lasts four hours and the fans are loud."}
+{"id": 17, "origen": "ampliacion", "tipo": "email", "subtipo": "es", "texto": "Estimada Sra. López: le confirmamos que la reunión con el equipo de Iberdrola tendrá lugar el 15 de octubre de 2026 en nuestras oficinas de Bilbao. Atentamente, Carlos Ruiz."}
+{"id": 18, "origen": "ampliacion", "tipo": "email", "subtipo": "en", "texto": "Dear Mr. Thompson, following our call on March 3rd, please find attached the revised contract from Deloitte. Kind regards, Emma Watson, Legal Department."}
+{"id": 19, "origen": "ampliacion", "tipo": "ambiguo", "subtipo": "sarcasmo", "texto": "Genial, otra vez el tren de Renfe con dos horas de retraso. Qué maravilla de servicio, de verdad, justo lo que necesitaba hoy."}
+{"id": 20, "origen": "ampliacion", "tipo": "ambiguo", "subtipo": "idioma_mixto", "texto": "Ayer tuve el meeting con el team de marketing de Google y honestly the feedback was great, aunque el deadline del viernes es imposible."}

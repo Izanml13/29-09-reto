@@ -1,0 +1,434 @@
+[
+  {
+    "id": 1,
+    "idioma": "es",
+    "sentimiento": "positivo",
+    "entidades": [
+      {
+        "texto": "Rosalía",
+        "tipo": "PERSONA"
+      }
+    ],
+    "palabras_clave": [
+      "Rosalía",
+      "disco",
+      "obra maestra"
+    ],
+    "nota": ""
+  },
+  {
+    "id": 2,
+    "idioma": "es",
+    "sentimiento": "negativo",
+    "entidades": [],
+    "palabras_clave": [
+      "servicio",
+      "compañía",
+      "tres semanas"
+    ],
+    "nota": ""
+  },
+  {
+    "id": 3,
+    "idioma": "es",
+    "sentimiento": "neutro",
+    "entidades": [
+      {
+        "texto": "calle Mayor 12",
+        "tipo": "UBICACION"
+      }
+    ],
+    "palabras_clave": [
+      "restaurante",
+      "calle Mayor",
+      "correcta"
+    ],
+    "nota": "Valoración tibia ('correcta, sin más') → neutro."
+  },
+  {
+    "id": 4,
+    "idioma": "es",
+    "sentimiento": "positivo",
+    "entidades": [
+      {
+        "texto": "Madrid",
+        "tipo": "UBICACION"
+      }
+    ],
+    "palabras_clave": [
+      "familia",
+      "Madrid",
+      "dos años"
+    ],
+    "nota": ""
+  },
+  {
+    "id": 5,
+    "idioma": "es",
+    "sentimiento": "negativo",
+    "entidades": [
+      {
+        "texto": "Iberia",
+        "tipo": "ORGANIZACION"
+      }
+    ],
+    "palabras_clave": [
+      "vuelo",
+      "Iberia",
+      "5 horas",
+      "conexión"
+    ],
+    "nota": ""
+  },
+  {
+    "id": 6,
+    "idioma": "en",
+    "sentimiento": "positivo",
+    "entidades": [
+      {
+        "texto": "iPhone",
+        "tipo": "OTRO"
+      },
+      {
+        "texto": "Paris",
+        "tipo": "UBICACION"
+      }
+    ],
+    "palabras_clave": [
+      "iPhone",
+      "camera",
+      "Paris"
+    ],
+    "nota": ""
+  },
+  {
+    "id": 7,
+    "idioma": "en",
+    "sentimiento": "negativo",
+    "entidades": [],
+    "palabras_clave": [
+      "movie",
+      "plot",
+      "acting"
+    ],
+    "nota": ""
+  },
+  {
+    "id": 8,
+    "idioma": "en",
+    "sentimiento": "neutro",
+    "entidades": [
+      {
+        "texto": "Monday at 10am",
+        "tipo": "FECHA"
+      },
+      {
+        "texto": "London",
+        "tipo": "UBICACION"
+      }
+    ],
+    "palabras_clave": [
+      "meeting",
+      "Monday",
+      "London"
+    ],
+    "nota": ""
+  },
+  {
+    "id": 9,
+    "idioma": "en",
+    "sentimiento": "positivo",
+    "entidades": [
+      {
+        "texto": "Google",
+        "tipo": "ORGANIZACION"
+      }
+    ],
+    "palabras_clave": [
+      "job",
+      "Google",
+      "team"
+    ],
+    "nota": ""
+  },
+  {
+    "id": 10,
+    "idioma": "en",
+    "sentimiento": "negativo",
+    "entidades": [
+      {
+        "texto": "Amazon",
+        "tipo": "ORGANIZACION"
+      }
+    ],
+    "palabras_clave": [
+      "Amazon",
+      "broken",
+      "customer support"
+    ],
+    "nota": ""
+  },
+  {
+    "id": 11,
+    "idioma": "es",
+    "sentimiento": "neutro",
+    "entidades": [
+      {
+        "texto": "Gobierno de España",
+        "tipo": "ORGANIZACION"
+      },
+      {
+        "texto": "Madrid",
+        "tipo": "UBICACION"
+      },
+      {
+        "texto": "ayer",
+        "tipo": "FECHA"
+      },
+      {
+        "texto": "Óscar Puente",
+        "tipo": "PERSONA"
+      },
+      {
+        "texto": "2.000 millones de euros",
+        "tipo": "OTRO"
+      }
+    ],
+    "palabras_clave": [
+      "Gobierno",
+      "2.000 millones",
+      "red ferroviaria",
+      "Óscar Puente"
+    ],
+    "nota": ""
+  },
+  {
+    "id": 12,
+    "idioma": "en",
+    "sentimiento": "neutro",
+    "entidades": [
+      {
+        "texto": "Apple",
+        "tipo": "ORGANIZACION"
+      },
+      {
+        "texto": "Tim Cook",
+        "tipo": "PERSONA"
+      },
+      {
+        "texto": "Monday",
+        "tipo": "FECHA"
+      },
+      {
+        "texto": "Cupertino",
+        "tipo": "UBICACION"
+      },
+      {
+        "texto": "$5 billion",
+        "tipo": "OTRO"
+      }
+    ],
+    "palabras_clave": [
+      "Apple",
+      "Tim Cook",
+      "5 billion",
+      "AI"
+    ],
+    "nota": ""
+  },
+  {
+    "id": 13,
+    "idioma": "pt",
+    "sentimiento": "neutro",
+    "entidades": [
+      {
+        "texto": "Lula",
+        "tipo": "PERSONA"
+      },
+      {
+        "texto": "Brasília",
+        "tipo": "UBICACION"
+      },
+      {
+        "texto": "Caixa Econômica Federal",
+        "tipo": "ORGANIZACION"
+      }
+    ],
+    "palabras_clave": [
+      "Lula",
+      "habitação",
+      "2 milhões",
+      "Caixa"
+    ],
+    "nota": ""
+  },
+  {
+    "id": 14,
+    "idioma": "es",
+    "sentimiento": "positivo",
+    "entidades": [
+      {
+        "texto": "SoundMax Pro",
+        "tipo": "OTRO"
+      }
+    ],
+    "palabras_clave": [
+      "auriculares",
+      "SoundMax",
+      "sonido",
+      "batería"
+    ],
+    "nota": ""
+  },
+  {
+    "id": 15,
+    "idioma": "es",
+    "sentimiento": "negativo",
+    "entidades": [
+      {
+        "texto": "Kitchenix",
+        "tipo": "OTRO"
+      }
+    ],
+    "palabras_clave": [
+      "batidora",
+      "rota",
+      "servicio técnico",
+      "dos veces"
+    ],
+    "nota": "Kitchenix = marca de producto → OTRO."
+  },
+  {
+    "id": 16,
+    "idioma": "en",
+    "sentimiento": "neutro",
+    "entidades": [
+      {
+        "texto": "Nimbus 3",
+        "tipo": "OTRO"
+      }
+    ],
+    "palabras_clave": [
+      "Nimbus",
+      "screen",
+      "keyboard",
+      "battery"
+    ],
+    "nota": "Reseña mixta: el esquema no tiene clase 'mixto' → neutro."
+  },
+  {
+    "id": 17,
+    "idioma": "es",
+    "sentimiento": "neutro",
+    "entidades": [
+      {
+        "texto": "Sra. López",
+        "tipo": "PERSONA"
+      },
+      {
+        "texto": "Iberdrola",
+        "tipo": "ORGANIZACION"
+      },
+      {
+        "texto": "15 de octubre de 2026",
+        "tipo": "FECHA"
+      },
+      {
+        "texto": "Bilbao",
+        "tipo": "UBICACION"
+      },
+      {
+        "texto": "Carlos Ruiz",
+        "tipo": "PERSONA"
+      }
+    ],
+    "palabras_clave": [
+      "reunión",
+      "Iberdrola",
+      "15 de octubre",
+      "Bilbao"
+    ],
+    "nota": ""
+  },
+  {
+    "id": 18,
+    "idioma": "en",
+    "sentimiento": "neutro",
+    "entidades": [
+      {
+        "texto": "Mr. Thompson",
+        "tipo": "PERSONA"
+      },
+      {
+        "texto": "March 3rd",
+        "tipo": "FECHA"
+      },
+      {
+        "texto": "Deloitte",
+        "tipo": "ORGANIZACION"
+      },
+      {
+        "texto": "Emma Watson",
+        "tipo": "PERSONA"
+      },
+      {
+        "texto": "Legal Department",
+        "tipo": "ORGANIZACION"
+      }
+    ],
+    "palabras_clave": [
+      "contract",
+      "Deloitte",
+      "Thompson"
+    ],
+    "nota": ""
+  },
+  {
+    "id": 19,
+    "idioma": "es",
+    "sentimiento": "negativo",
+    "entidades": [
+      {
+        "texto": "Renfe",
+        "tipo": "ORGANIZACION"
+      },
+      {
+        "texto": "hoy",
+        "tipo": "FECHA"
+      }
+    ],
+    "palabras_clave": [
+      "Renfe",
+      "retraso",
+      "dos horas"
+    ],
+    "nota": "Sarcasmo: literal positivo, intención negativa."
+  },
+  {
+    "id": 20,
+    "idioma": "es",
+    "sentimiento": "positivo",
+    "entidades": [
+      {
+        "texto": "Google",
+        "tipo": "ORGANIZACION"
+      },
+      {
+        "texto": "Ayer",
+        "tipo": "FECHA"
+      },
+      {
+        "texto": "viernes",
+        "tipo": "FECHA"
+      }
+    ],
+    "palabras_clave": [
+      "meeting",
+      "marketing",
+      "Google",
+      "feedback",
+      "deadline"
+    ],
+    "nota": "Code-switching ES/EN; idioma dominante 'es'."
+  }
+]

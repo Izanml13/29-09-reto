@@ -5,3 +5,9 @@ __pycache__/
 *.pyc
 # Descargas temporales de --imagen-url
 imagen_url.jpg
+
+# Entorno y notebooks
+.venv
+venv/
+.ipynb_checkpoints/
+.DS_Store

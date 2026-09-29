@@ -1,6 +1,82 @@
-# Reto 28-09 — Gemini API con Python
+# Reto Gemini — Análisis avanzado de texto e imágenes
 
-Script funcional con llamadas a la API de Gemini (texto + imagen) + instrucciones.
+Evolución del Reto 28-09: se reutilizan `get_client()`, `cargar_imagen()`, el manejo de errores 429/`API_KEY_INVALID`, los 10 textos (`TEXTOS_ES` + `TEXTOS_EN`) y `ejemplo.jpg`. Ahora hay análisis de texto (idioma, entidades, sentimiento, resumen), análisis de imagen (OCR, descripción, escena, objetos) y una evaluación cuantitativa frente a un *ground truth* manual, con un informe en Jupyter.
+
+> [!WARNING]
+> **Estado: código completo y verificado, sin resultados reales todavía.**
+> No se pudieron hacer las llamadas reales por un bloqueo externo de Google que no depende del proyecto:
+> - `gemini-2.5-flash` → **404** *"no longer available to new users"*
+> - resto de modelos → **403** *"Your project has been denied access. Please contact support."*
+> - la única clave que llegó a responder fue invalidada en minutos (**401 UNAUTHENTICATED**)
+>
+> Detalle, diagnóstico y pasos para reanudar: **[docs/INCIDENCIA_API.md](docs/INCIDENCIA_API.md)**.
+> Con una clave válida, basta con ejecutar los 4 comandos de la sección *Uso*. `resultados/` y las gráficas se generan solos.
+
+## Instalación
+
+```bash
+python3 -m venv .venv && source .venv/bin/activate   # Python 3.10+
+pip install -r requirements.txt
+cp .env.example .env    # y pon tu GEMINI_API_KEY
+```
+
+## Uso
+
+```bash
+python main.py --todo                        # demo rápida heredada (Reto 28-09)
+python -m src.text_analysis                  # Parte 1 → resultados/resultados_texto.json
+python -m src.image_analysis                 # Parte 2 → resultados/resultados_imagenes.json
+python -m src.evaluacion                     # métricas → resultados/metricas.json
+jupyter notebook notebooks/analisis_resultados.ipynb   # informe + gráficas en resultados/graficas/
+```
+
+Ejecución modular (argparse):
+
+```bash
+python -m src.text_analysis --ids 9 10 --tarea extraccion
+python -m src.image_analysis --tareas ocr escena --imagenes data/imagenes/screenshot.png https://ejemplo.com/foto.jpg
+python -m src.evaluacion --solo imagenes
+```
+
+Coste aproximado de una ejecución completa: 40 llamadas de texto + 24 de imagen (~3-4 min con la pausa de 1 s).
+
+## Estructura
+
+| Ruta | Contenido |
+|---|---|
+| `src/utils.py` | `get_client()`, `cargar_imagen()`, `llamar_gemini_json()` (backoff exponencial 2-4-8-16 s ante 429/5xx, reintento con prompt de corrección si el JSON es inválido, `time.sleep(1)` entre llamadas) |
+| `src/text_analysis.py` | Prompt de extracción (idioma + entidades tipadas + sentimiento, `temperature=0`) y prompt de resumen (`temperature=0.3`); `response_schema` para forzar el JSON |
+| `src/image_analysis.py` | Un prompt + esquema por tarea visual (`temperature=0`) |
+| `src/evaluacion.py` | Accuracy, P/R/F1 por tipo, matriz de confusión, ROUGE-L aproximado, CER (Levenshtein), cobertura de elementos |
+| `data/textos.jsonl` | ids 1-10: los textos originales de `main.py`; ids 11-20: ampliación con noticias ES/EN/PT, emails formales, reseña mixta, sarcasmo e idioma mixto (`scripts/generar_datos_texto.py`) |
+| `data/ground_truth_*.json` | Etiquetas manuales (con notas en los casos dudosos y sinónimos aceptados) |
+| `data/imagenes/` + `ejemplo.jpg` | 5 imágenes de prueba (`scripts/generar_imagenes.py`) + la imagen heredada |
+| `notebooks/analisis_resultados.ipynb` | Tablas, 5 gráficas y conclusiones (regenerable con `scripts/crear_notebook.py`) |
+
+## Esquema de salida (texto)
+
+```json
+{"id": 1, "idioma": "es", "texto": "...",
+ "entidades": [{"texto": "Madrid", "tipo": "UBICACION"}],
+ "sentimiento": {"polaridad": "neutro", "confianza": 0.9},
+ "resumen": "..."}
+```
+
+## Decisiones de diseño y métricas
+
+- **Dos llamadas por texto**: la extracción va a `temperature=0` y el resumen a `0.3`, como pide el requisito de reproducibilidad.
+- **Matching de entidades**: difuso (normalizado, sin tildes, inclusión de subcadena), así "Sra. López" empareja con "López". Se da F1 con tipo y sin tipo para separar los errores de detección de los de clasificación.
+- **Reseña mixta** → `neutro` (el esquema no tiene clase "mixto"). **Sarcasmo** → `negativo`.
+- **ROUGE-L aproximado**: sin resúmenes de referencia humanos, se calcula el LCS entre el resumen y el texto original, más la **cobertura de palabras clave** anotadas.
+- **CER** = distancia de Levenshtein / longitud de la referencia, con espacios colapsados. Puede superar 1 si el modelo inventa texto.
+- **Imágenes sintéticas**: se generan con Pillow para que el *ground truth* sea exacto (texto OCR conocido, número de coches y personas, etc.). Para evaluar con fotos reales, sustitúyelas manteniendo el nombre y actualiza `ground_truth_imagenes.json`.
+
+- **Modelo:** si `gemini-2.5-flash` devuelve 404 (retirado para cuentas nuevas), pon `GEMINI_MODEL=gemini-flash-latest` en `.env`.
+
+---
+
+# Reto 28-09 (original) — Gemini API con Python
+
 
 ## 1. Paso a paso realizado
 
